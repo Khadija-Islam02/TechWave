@@ -1,3 +1,6 @@
+body{
+  font-family: "Inter", sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
@@ -139,7 +142,6 @@ li {
 }
 .max {
   max-width: 1200px;
-  width: 100%;
   margin: auto;
 }
 .for-h1 {
@@ -322,7 +324,7 @@ li {
   margin-top: 120px;
 }
 .footer {
-  height: 412px;
+  padding: 120px 0px;
   width: 100%;
   background-image: url("images/footer-bg.png");
   background-repeat: no-repeat;
@@ -408,7 +410,7 @@ li {
     display: flex;
   }
   .nav-bar {
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0px 20px;
   }
   .main-1 {
@@ -464,16 +466,37 @@ li {
       "exclusive  "
       "resource";
   }
-  .feature-content{
-    grid-template-columns: repeat(1,1fr);
-    padding:40px 20px;
+  .feature-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 40px 20px;
   }
-  .for-h2{
+  .for-h2 {
     font-size: 32px;
   }
-  .host{
-    padding:40px 20px;
+  .host {
+    padding: 40px 20px;
   }
   .host-1 {
-  flex-direction: column;
+    flex-direction: column;
+  }
+  .h-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .footer-logo{
+    padding: 40px 20px;
+  }
+  .footer-list ul {
+    flex-wrap: wrap;
+  }
+  .footer{
+    padding:0px 0px;
+  }
+  .footer-logo h1{
+    font-size: 32px;
+  }
+  
 }
