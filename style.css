@@ -44,7 +44,7 @@ li {
   font-weight: 400;
   font-size: 16px;
   display: inline-flex;
-  gap: 4px;
+  gap: 8px;
   align-items: center;
 }
 .btn-1 {
@@ -55,7 +55,7 @@ li {
   font-weight: 400;
   font-size: 16px;
   display: inline-flex;
-  gap: 4px;
+  gap: 8px;
   align-items: center;
   padding: 12px 16px;
 }
@@ -72,6 +72,7 @@ li {
   box-sizing: border-box;
   background-image: url("images/hero-bg.png");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -96,14 +97,14 @@ li {
   align-items: center;
   position: relative;
 }
-.main-1 span{
-  padding:8px 16px;
-  background-color: #00FF88;
-  color:#1A0B2E;
+.main-1 span {
+  padding: 8px 16px;
+  background-color: #00ff88;
+  color: #1a0b2e;
   border-radius: 1000px;
   position: absolute;
-  top:0;
-  left:65%;
+  top: 0;
+  left: 65%;
 }
 .main-2 {
   display: flex;
@@ -160,6 +161,16 @@ li {
   font-size: 48px;
   text-align: center;
   margin-bottom: 16px;
+}
+
+.fa-star {
+  font-size: 29px;
+}
+.problem-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 .about-3 {
   display: flex;
@@ -243,7 +254,7 @@ li {
   padding: 120px 0;
 }
 .fe-box {
-  border-radius: 8px;
+  border-radius: 24px;
   overflow: hidden;
 }
 .f-h4 {
@@ -259,22 +270,20 @@ li {
   font-weight: 400;
   margin-bottom: 12px;
   color: #ffffff;
- 
 }
 .f-p2 {
   color: #00ff88;
   font-size: 16px;
   font-weight: 600;
-}
-.p3{
-  flex:1;
+  display: inline-flex;
+  gap: 6px;
 }
 
 .box-text {
   padding: 24px 24px;
   background-color: #250d44;
   display: flex;
-  height:100%;
+  height: 100%;
   flex-direction: column;
 }
 .forh3 {
@@ -317,6 +326,7 @@ li {
   width: 100%;
   background-image: url("images/footer-bg.png");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   justify-content: center;
   align-items: center;
@@ -351,3 +361,40 @@ li {
   font-size: 16px;
   margin-top: 32px;
 }
+
+/* responsive for medium device */
+@media (min-width: 576px) and (max-width: 992px) {
+  .about-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 50px;
+  }
+  .menu {
+    display: none;
+  }
+  .nav-bar .btn {
+    display: none;
+  }
+  .menu2 {
+    display: flex;
+  }
+  .nav-bar {
+    padding: 0px 40px;
+    box-sizing: border-box;
+  }
+  .choose {
+    padding: 100px 40px;
+  }
+  .feature-content{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .i-frame{
+    width:100%;
+    height: 350px;
+  }
+  .feature-host{
+    padding:100px 40px;
+  }
+}
+
