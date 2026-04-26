@@ -386,15 +386,58 @@ li {
   .choose {
     padding: 100px 40px;
   }
-  .feature-content{
-    grid-template-columns: repeat(1,1fr);
+  .feature-content {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .i-frame{
-    width:100%;
+  .i-frame {
+    width: 100%;
     height: 350px;
   }
-  .feature-host{
-    padding:100px 40px;
+  .feature-host {
+    padding: 100px 40px;
   }
 }
-
+@media (max-width: 575px) {
+  .menu {
+    display: none;
+  }
+  .nav-bar .btn {
+    display: none;
+  }
+  .menu2 {
+    display: flex;
+  }
+  .nav-bar{
+    justify-content: space-around;
+    padding:0px 20px;
+  }
+  .main-1{
+    width:200px;
+    height: 200px;
+    border-radius: 1000px;
+  }
+  .main-1 img{
+    width:60px;
+  }
+  .main-1 span{
+    padding:8px 16px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-banner{
+    padding: 40px 20px;
+  }
+  .title{
+    font-size: 40px;
+  }
+  .for-p{
+    font-size: 16px;
+  }
+  .about{
+    padding:40px 20px;
+  }
+  .for-h1{
+    font-size: 32px;
+  }
+}
