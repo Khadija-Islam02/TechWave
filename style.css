@@ -440,4 +440,13 @@ li {
   .for-h1{
     font-size: 32px;
   }
+  .about-3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:16px;
+  }
+  .about-box{
+    width:auto;
+  }
+  
 }
