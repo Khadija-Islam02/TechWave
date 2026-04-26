@@ -407,46 +407,73 @@ li {
   .menu2 {
     display: flex;
   }
-  .nav-bar{
+  .nav-bar {
     justify-content: space-around;
-    padding:0px 20px;
+    padding: 0px 20px;
   }
-  .main-1{
-    width:200px;
+  .main-1 {
+    width: 200px;
     height: 200px;
     border-radius: 1000px;
   }
-  .main-1 img{
-    width:60px;
+  .main-1 img {
+    width: 60px;
   }
-  .main-1 span{
-    padding:8px 16px;
+  .main-1 span {
+    padding: 8px 16px;
     font-size: 14px;
     justify-content: center;
     align-items: center;
   }
-  .main-banner{
+  .main-banner {
     padding: 40px 20px;
   }
-  .title{
+  .title {
     font-size: 40px;
   }
-  .for-p{
+  .for-p {
     font-size: 16px;
   }
-  .about{
-    padding:40px 20px;
+  .about {
+    padding: 40px 20px;
   }
-  .for-h1{
+  .for-h1 {
     font-size: 32px;
   }
-  .about-3{
+  .about-3 {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
-  .about-box{
-    width:auto;
+  .about-box {
+    width: auto;
   }
-  
+  .choose {
+    padding: 40px 20px;
+  }
+  .choose-h {
+    font-size: 32px;
+  }
+  .choose-main {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    grid-template-areas:
+      "headphone"
+      "device"
+      "location "
+      "exclusive  "
+      "resource";
+  }
+  .feature-content{
+    grid-template-columns: repeat(1,1fr);
+    padding:40px 20px;
+  }
+  .for-h2{
+    font-size: 32px;
+  }
+  .host{
+    padding:40px 20px;
+  }
+  .host-1 {
+  flex-direction: column;
 }
