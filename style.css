@@ -99,7 +99,7 @@ li {
   border-radius: 1000px;
 }
 .main-1img {
-  z-index: g2;
+  z-index: 3;
 }
 .animation-img {
   width: 100%;
