@@ -70,7 +70,7 @@ li {
 }
 .banner {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   box-sizing: border-box;
   background-image: url("images/hero-bg.png");
   background-repeat: no-repeat;
@@ -81,7 +81,6 @@ li {
   align-items: center;
 }
 .main-banner {
-  height: 550px;
   width: 550px;
   display: flex;
   flex-direction: column;
@@ -98,6 +97,7 @@ li {
   justify-content: center;
   align-items: center;
   position: relative;
+  border-radius: 1000px;
 }
 .main-1 span {
   padding: 8px 16px;
@@ -191,10 +191,15 @@ li {
   border: 1px solid white;
 }
 .choose-box {
-  display: grid;
   background-color: #351165;
   padding: 40px 40px;
   border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.choose-image{
+  width:60px;
 }
 .for-h2 {
   color: #ffffff;
