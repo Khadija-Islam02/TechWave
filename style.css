@@ -35,7 +35,7 @@ li {
 }
 .btn {
   padding: 12px 16px;
-  background: -webkit-linear-gradient(
+  background: linear-gradient(
     45deg,
     #f7e93f 0%,
     #fb09b4 51%,
@@ -48,6 +48,17 @@ li {
   display: inline-flex;
   gap: 8px;
   align-items: center;
+  cursor: pointer;
+  transition: all 1s ;
+}
+.btn:hover {
+  background:linear-gradient(
+    45deg,
+    #9100f8 0%,
+    #f7e93f 51%,
+    #fb09b4 100%
+  );
+  
 }
 .btn-1 {
   background: transparent;
@@ -90,7 +101,6 @@ li {
 .main-1 {
   height: 350px;
   width: 350px;
-  background-image: url("images/hero-circle.png");
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -98,6 +108,25 @@ li {
   align-items: center;
   position: relative;
   border-radius: 1000px;
+  
+}
+.main-1img{
+  z-index: +2;
+}
+.animation-img{
+  width:100%;
+  position: absolute;
+  
+  animation: puspita 2s linear infinite;
+}
+@keyframes puspita {
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+  
 }
 .main-1 span {
   padding: 8px 16px;
@@ -198,8 +227,8 @@ li {
   flex-direction: column;
   justify-content: center;
 }
-.choose-image{
-  width:60px;
+.choose-image {
+  width: 60px;
 }
 .for-h2 {
   color: #ffffff;
@@ -425,6 +454,9 @@ li {
   }
   .main-1 img {
     width: 60px;
+  }
+  .animation-img{
+    width:100%;
   }
   .main-1 span {
     padding: 8px 16px;
